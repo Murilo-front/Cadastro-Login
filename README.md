@@ -37,7 +37,7 @@ Foco na parte central da página, a qual tem como objetivo simular uma tela de l
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/Murilo-front/Cadastro/Login.git meu-projeto
+git clone https://github.com/Murilo-front/Cadastro-Login.git meu-projeto
 ```
 
 2. Acesse a pasta do projeto:
