@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor-principal: #3a68b7;
+}
+
+html{
+    font-size: 62,5%;
+    background-color: var(--cor-principal);
+}
+
+body{
+    height: 100dvh;
+    width: 100rvw;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.formulario{
+    background-color: #fff;
+    max-width: 50%;
+    min-width: 40%;
+    box-shadow: -.5rem 0 rgba(0,0,0,.5);
+ }
+
+ .fieldset{
+    display: flex;
+   flex-direction: column;
+   padding: 2rem;
+   border: none;
+}
+
+.legenda{   
+    font-size: 2rem;
+    padding-top: 2rem;
+    color: var(--cor-principal);
+}
+
+.label{
+    padding-bottom: .5rem;
+    padding-top: 1.2rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.label-usuario{
+    padding-bottom: .5rem;
+    padding-top: 0rem;
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+
+input{
+    font-size: 1.5rem;
+    padding: .3rem 0 .3rem 0;
+    border: none;
+    border-bottom: .1rem solid black;
+    transition-property: padding; 
+    transition-duration: 180ms;
+    transition-timing-function: cubic-bezier(.23,.33,.9,.39);
+}
+
+input:focus{
+    padding-left: .5rem;
+    outline: none;
+   
+}
+
+input:focus:valid{
+    border-bottom: .15rem solid rgb(0, 254, 0);
+}
+
+input:focus:invalid{
+    border-bottom: .15rem solid red;
+}
+
+.footer-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.2rem;
+}
+
+.btn-footer{
+    display: flex;
+    align-items: center;
+}
+
+.btn-footer button{
+    padding: .6rem;
+    padding-inline: 1.5rem;
+    font-size: 1rem;
+    background-color: var(--cor-principal);
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: .3rem;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-footer .btn-cadastro{
+    font-size: 1rem;
+    padding: .6rem;
+    padding-inline: 1.5rem;
+    color: var(--cor-principal);
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn-senha{
+    color: black;
+}

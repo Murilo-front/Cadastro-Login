@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/cadastro.css" />
+  </head>
+  <body>
+    <form action="" class="formulario" autocomplete="off">
+      <fieldset class="fieldset">
+        <legend class="legenda">Cadastre-se</legend>
+        <label for="input-nome" class="label-usuario">usário</label>
+        <input
+          type="text"
+          name="nome"
+          id="input-nome"
+          class="input"
+          required
+          autofocus
+        />
+        <label for="input-email" class="label">email</label>
+        <input
+          type="email"
+          name="email"
+          id="input-email"
+          class="input"
+          required
+        />
+        <label for="input-senha" class="label">senha</label>
+        <input
+          type="password"
+          name="senha"
+          id="input-senha"
+          class="input"
+          minlength="6ch"
+          required
+        />
+        <div class="footer-form">
+          <button type="submit">Cadastre-se</button>
+          <p class="faca-loguin">
+            Já possui cadastro?
+            <a href="loguin.html">Faça loguin</a>
+          </p>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
