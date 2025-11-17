@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style/cadastro.css" />
   </head>
   <body>
-    <form action="" class="formulario" autocomplete="off">
+    <form action="" id="cadastroForm" class="formulario" autocomplete="off">
       <fieldset class="fieldset">
         <legend class="legenda">Cadastre-se</legend>
         <label for="input-nome" class="label-usuario">usário</label>
@@ -38,13 +38,18 @@
           required
         />
         <div class="footer-form">
-          <button type="submit">Cadastre-se</button>
+          <button type="submit" id="cadastroBtn">Cadastre-se</button>
           <p class="faca-loguin">
             Já possui cadastro?
-            <a href="loguin.html">Faça loguin</a>
+            <a href="loguin.html" id="loguinBtn">Faça loguin</a>
           </p>
         </div>
       </fieldset>
+      <dialog id="dialog">
+        <p id="dialog-msg">Cadastro realizado!</p>
+        <button type="button" id="fechar-dialog">Fechar</button>
+      </dialog>
     </form>
+    <script type="module" src="script/cadastro.js"></script>
   </body>
 </html>
