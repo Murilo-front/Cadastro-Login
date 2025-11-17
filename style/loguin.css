@@ -1,121 +1,162 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-:root{
-    --cor-principal: #3a68b7;
+:root {
+  --cor-principal: #3a68b7;
+  --display_after_body: none;
 }
 
-html{
-    font-size: 62,5%;
-    background-color: var(--cor-principal);
+html {
+  font-size: 62, 5%;
+  background-color: var(--cor-principal);
 }
 
-body{
-    height: 100dvh;
-    width: 100rvw;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    display: flex;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+body {
+  height: 100dvh;
+  width: 100rvw;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.formulario{
-    background-color: #fff;
-    max-width: 50%;
-    min-width: 40%;
-    box-shadow: -.5rem 0 rgba(0,0,0,.5);
- }
-
- .fieldset{
-    display: flex;
-   flex-direction: column;
-   padding: 2rem;
-   border: none;
+.formulario {
+  background-color: #fff;
+  max-width: 50%;
+  min-width: 40%;
+  box-shadow: -0.5rem 0 rgba(0, 0, 0, 0.5);
+  position: relative;
 }
 
-.legenda{   
-    font-size: 2rem;
-    padding-top: 2rem;
-    color: var(--cor-principal);
+.fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border: none;
 }
 
-.label{
-    padding-bottom: .5rem;
-    padding-top: 1.2rem;
-    text-transform: uppercase;
-    font-size: 0.9rem;
+.legenda {
+  font-size: 2rem;
+  padding-top: 2rem;
+  color: var(--cor-principal);
 }
 
-.label-usuario{
-    padding-bottom: .5rem;
-    padding-top: 0rem;
-    text-transform: uppercase;
-    font-size: .9rem;
+.label {
+  padding-bottom: 0.5rem;
+  padding-top: 1.2rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
 }
 
-input{
-    font-size: 1.5rem;
-    padding: .3rem 0 .3rem 0;
-    border: none;
-    border-bottom: .1rem solid black;
-    transition-property: padding; 
-    transition-duration: 180ms;
-    transition-timing-function: cubic-bezier(.23,.33,.9,.39);
+.label-usuario {
+  padding-bottom: 0.5rem;
+  padding-top: 0rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
 }
 
-input:focus{
-    padding-left: .5rem;
-    outline: none;
-   
+input {
+  font-size: 1.5rem;
+  padding: 0.3rem 0 0.3rem 0;
+  border: none;
+  border-bottom: 0.1rem solid black;
+  transition-property: padding;
+  transition-duration: 180ms;
+  transition-timing-function: cubic-bezier(0.23, 0.33, 0.9, 0.39);
 }
 
-input:focus:valid{
-    border-bottom: .15rem solid rgb(0, 254, 0);
+input:focus {
+  padding-left: 0.5rem;
+  outline: none;
 }
 
-input:focus:invalid{
-    border-bottom: .15rem solid red;
+input:focus:valid {
+  border-bottom: 0.15rem solid rgb(0, 254, 0);
 }
 
-.footer-form{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 1.2rem;
+input:focus:invalid {
+  border-bottom: 0.15rem solid red;
 }
 
-.btn-footer{
-    display: flex;
-    align-items: center;
+.footer-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.2rem;
 }
 
-.btn-footer button{
-    padding: .6rem;
-    padding-inline: 1.5rem;
-    font-size: 1rem;
-    background-color: var(--cor-principal);
-    color: #fff;
-    text-transform: uppercase;
-    border-radius: .3rem;
-    cursor: pointer;
-    border: none;
+.btn-footer {
+  display: flex;
+  align-items: center;
 }
 
-.btn-footer .btn-cadastro{
-    font-size: 1rem;
-    padding: .6rem;
-    padding-inline: 1.5rem;
-    color: var(--cor-principal);
-    cursor: pointer;
-    text-transform: uppercase;
-    text-decoration: none;
+.btn-footer button {
+  padding: 0.6rem;
+  padding-inline: 1.5rem;
+  font-size: 1rem;
+  background-color: var(--cor-principal);
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  border: none;
 }
 
-.btn-senha{
-    color: black;
+.btn-footer .btn-cadastro {
+  font-size: 1rem;
+  padding: 0.6rem;
+  padding-inline: 1.5rem;
+  color: var(--cor-principal);
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn-senha {
+  color: black;
+}
+
+dialog {
+  border: none;
+  border-radius: 10px;
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  z-index: 2;
+}
+
+#fechar-dialog {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#fechar-dialog:hover {
+  background-color: #c0392b;
+}
+
+body::after {
+  content: "";
+  display: var(--display_after_body);
+  width: 100dvw;
+  height: 100dvh;
+  background-color: gray;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  opacity: 0.2;
 }
