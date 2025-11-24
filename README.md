@@ -2,7 +2,7 @@
 
 ### 📝 Descrição
 
-Projeto feito e aprimorado para simular envio de informações à uma fake API, e validação das mesmas por requisições assíncronas. Uma tela de cadastro e loguin funcional por armezanar e validar as informações pelo localStorege.
+Projeto feito e aprimorado para simular tipos de requisições à uma fake API. Uma tela de cadastro, loguin e alteração de informações cadastradas utilizando o localStorege para atribuir funcionalidade.
 
 ### 👀 Demonstração
 
