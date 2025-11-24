@@ -8,7 +8,7 @@
     <title>Loguin</title>
   </head>
   <body>
-    <form action="" class="formulario" autocomplete="off">
+    <form action="" id="loguinForm" class="formulario" autocomplete="off">
       <fieldset class="fieldset">
         <legend class="legenda">Loguin</legend>
         <label class="label-usuario" for="input-nome">usuário</label>
@@ -23,12 +23,17 @@
         />
         <div class="footer-form">
           <div class="btn-footer">
-            <button type="submit">loguin</button>
-            <a class="btn-cadastro" href="cadastro.html"><b>cadastre-se</b></a>
+            <button type="submit" id="loguinBtn">loguin</button>
+            <a class="btn-cadastro" id="cadastroBtn" href="index.html"
+              ><b>cadastre-se</b></a
+            >
           </div>
-          <a class="btn-senha" href="#">Esqueci minha senha</a>
+          <a class="btn-senha" href="#" id="esqueceu-senha-btn"
+            >Esqueci minha senha</a
+          >
         </div>
       </fieldset>
     </form>
+    <script type="module" src="script/loguin.js"></script>
   </body>
 </html>

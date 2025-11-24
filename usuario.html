@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usuário</title>
+    <link rel="stylesheet" href="style/usuario.css" />
+  </head>
+
+  <body>
+    <!-- Imagens selecionadas pelo atributo alt -->
+    <div class="container">
+      <h1>Informações do usuário</h1>
+      <form autocomplete="off">
+        <label>Nome:</label>
+        <div class="divInput">
+          <input type="text" id="input-nome" name="nome" disabled />
+          <img src="icomoon/SVG/pencil.svg" alt="pencil icon" />
+          <img
+            src="icomoon/SVG/checkmark.svg"
+            alt="confirm icon"
+            style="display: none"
+          />
+        </div>
+
+        <label>Email:</label>
+        <div class="divInput">
+          <input type="email" id="input-email" name="email" disabled />
+          <img src="icomoon/SVG/pencil.svg" alt="pencil icon" />
+          <img
+            src="icomoon/SVG/checkmark.svg"
+            alt="confirm icon"
+            style="display: none"
+          />
+        </div>
+
+        <label>Senha:</label>
+        <div class="divInput">
+          <input
+            type="text"
+            id="input-senha"
+            minlength="6ch"
+            name="senha"
+            disabled
+          />
+          <span class="senhaIcons">
+            <img src="icomoon/SVG/pencil.svg" alt="pencil icon" />
+            <img
+              src="icomoon/SVG/checkmark.svg"
+              alt="confirm icon"
+              style="display: none"
+            />
+            <img src="icomoon/SVG/eye.svg" alt="eye icon" />
+            <img
+              src="icomoon/SVG/eye-blocked.svg"
+              alt="eye-blocked icon"
+              style="display: none"
+            />
+          </span>
+        </div>
+        <div class="footer-form">
+          <a href="loguin.html" id="loguinBtn">outro loguin</a>
+          <button type="button" id="deleteBtn">
+            <b>Deletar conta</b>
+          </button>
+        </div>
+      </form>
+      <dialog id="dialog">
+        <p id="msg">Alteração concluida!</p>
+        <button id="fechar-dialog">Fechar</button>
+      </dialog>
+      <dialog id="confirm-dialog">
+        <p id="confirm-dialog-msg">Confirmar alteração?</p>
+        <p id="delete-dialog-msg" style="display: none">
+          Deseja deletar conta?
+        </p>
+        <div class="buttonsDialog">
+          <button id="confirm-dialog-button">Confirmar</button>
+          <button id="cancel-dialog-button">Cancelar</button>
+        </div>
+      </dialog>
+    </div>
+
+    <script type="module" src="script/usuarioInit.js"></script>
+    <script type="module" src="script/usuarioMain.js" defer></script>
+    <script type="module" src="script/usuarioFunctions.js" defer></script>
+  </body>
+</html>

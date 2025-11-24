@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cor-principal: #3a68b7;
+  --display_after_body: none;
+}
+
+body {
+  height: 100dvh;
+  width: 100rvw;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: var(--cor-principal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.container {
+  max-width: 40%;
+  min-width: 30%;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form label {
+  padding-bottom: 5px;
+  padding-top: 0rem;
+  font-weight: bold;
+  font-size: 16px;
+  display: block;
+  margin-top: 25px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+form input:disabled {
+  background-color: #eee;
+  color: #777;
+}
+
+.divInput {
+  position: relative;
+  width: 100%;
+}
+
+.divInput img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 45px;
+  padding: 7px;
+  padding-inline: 10px;
+}
+
+.divInput img:hover {
+  scale: 1.2;
+  cursor: pointer;
+}
+
+.senhaIcons {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.senhaIcons img {
+  position: relative;
+  width: 40px;
+  padding: 8px;
+  padding-inline: 8px;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.footer-form button {
+  padding: 0.6rem;
+  padding-inline: 0.8rem;
+  font-size: 1rem;
+  background-color: rgb(255, 71, 71);
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  border: none;
+}
+
+.footer-form a {
+  font-size: 1rem;
+  color: var(--cor-principal);
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 0.6rem;
+  padding-inline: 0.8rem;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.footer-form a:hover {
+  background-color: #dedede;
+}
+
+dialog {
+  border: none;
+  border-radius: 10px;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  z-index: 2;
+}
+
+#dialog {
+  /* display: block; */
+}
+
+body::after {
+  content: "";
+  display: var(--display_after_body);
+  width: 100dvw;
+  height: 100dvh;
+  background-color: gray;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  opacity: 0.2;
+}
+
+#fechar-dialog,
+#cancel-dialog-button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#fechar-dialog:hover,
+#cancel-dialog-button:hover,
+.footer-form button:hover {
+  background-color: #c0392b;
+}
+
+#cancel-dialog-button {
+  font-weight: bolder;
+}
+
+#confirm-dialog {
+  /* display: block; */
+  left: 25%;
+}
+
+.buttonsDialog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 5px;
+}
+
+#confirm-dialog-button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #dedede;
+  color: var(--cor-principal);
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#confirm-dialog-button:hover {
+  background-color: #d4d3d3;
+}
