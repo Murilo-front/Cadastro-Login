@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Projeto Cadastro/Login
 
 ### 📝 Descrição
@@ -63,3 +64,61 @@ cd meu-projeto
 - Clique duas vezes no arquivo ou
 
 - Use um editor como o Visual Studio Code e a extensão Live Server.
+=======
+# Projeto Cadastro/Login
+
+### 📝 Descrição
+
+Projeto feito e aprimorado para simular envio de informações à uma fake API, e validação das mesmas por requisições assíncronas. Uma tela de cadastro e loguin funcional por armezanar e validar as informações pelo localStorege.
+
+### 👀 Demonstração
+
+#### Seção de Interação/Funcionalidade
+
+**Seção de Interação/Funcionalidade | Cadastro**
+
+Visão geral da tela de cadastro.
+
+<img src="Produto/Foto-produto-cadastro.png" alt="Visão geral da tela de cadastro">
+<img src="Produto/Foto-produto-cadastro-realizado.png" alt="Visão geral da tela de cadastro">
+
+**Seção de Interação/Funcionalidade | Login**
+
+Visão geral da tela de loguin
+
+<img src="Produto/Foto-produto-loguin.png" alt="Captura de tela da tela de login">
+<img src="Produto/Foto-produto-loguin-realizado.png" alt="Captura de tela da tela de login">
+
+### 💻 Tecnologias utilizadas
+
+- HTML5
+- CSS3
+- JavaScript
+
+### 🎯 Objetivos de aprendizado
+
+- Praticar conceitos de `requisições assíncronas`.
+- Uso do `localStorege`.
+- Uso do metodo `POST` para envio de informações e validação de informações.
+- Reforço à conceitos de manipulação de `DOM`.
+
+### 📲 Instalação
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/Murilo-front/Cadastro/Login.git meu-projeto
+```
+
+2. Acesse a pasta do projeto:
+
+```bash
+cd meu-projeto
+```
+
+3. Abra o arquivo index.html no navegador:
+
+- Clique duas vezes no arquivo ou
+
+- Use um editor como o Visual Studio Code e a extensão Live Server.
+>>>>>>> de01902203c9ad1b75bd23f924ec1b7f055f9092
